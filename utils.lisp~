@@ -1,0 +1,5 @@
+(defun print-frequency-table()
+  "Prints the frequency table in the format: 'key: value'"
+  (maphash (lambda (key value)
+	     (format t "~a: ~a~%" key value))
+	   frequency-table))
