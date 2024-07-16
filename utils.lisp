@@ -4,6 +4,12 @@
 	     (format t "~a: ~a~%" key value))
 	   frequency-table))
 
+(defun is-alphabet(char)
+  "Checks if char is a letter from the alphabet"
+  (or (and (char>= char #\A) (char<= char #\Z))
+      (and (char>= char #\a) (char<= char #\z))
+      (char= char #\�)))
+       
 (defun get-percentage(total)
     "Modifies the frequency table so that the values are the percentage of each key.
      Total should be the sum of the occurrences of all keys in the frequency table."
