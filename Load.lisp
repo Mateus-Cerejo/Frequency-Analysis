@@ -1,6 +1,6 @@
 (defun get-path(file)
   "Returns the path to the file"
-  (concatenate 'string "~/Projects/SI-Project/" file))
+  (concatenate 'string "~/OneDrive/Ambiente de Trabalho/" file))
 
 (defun load-data(pathname)
   "Gets ciphered text and stores the frequency of each letter in frequency table"
@@ -15,7 +15,7 @@
 		(let ((value (gethash character frequency-table))
 		      (is-alphabet (or (and (char>= character #\A) (char<= character #\Z))
 				       (and (char>= character #\a) (char<= character #\z))
-				       (char= character #\�))))
+				       (char= character #\4))))
 		  (cond ((and (null value) is-alphabet)
 			 (setf (gethash character frequency-table) 1)
 			 (setf total (1+ total)))

@@ -2,33 +2,24 @@
 
 (defun frequency-analyser (language-frequency)
   (if (< (length text) 200)
-		(format t "Your text has ~d characters, for a good analysis we recommend 200 or more characters!" (length text))
+		(format t "Your text has ~d characters, for a good analysis we recommend 200 or more characters!" (length *text*))
 	)
-  (get-swap-map (hashtable-to-ordered-list language-frequency) (order-frequency language-frequency))
-  (swap-letters text)
+  (get-swap-map (hashtable-to-ordered-list language-frequency) language-frequency)
+  
   )
 
-(defun teste ()
-  (let ((language-frequency (get-language)))
-      (get-swap-map (hashtable-to-ordered-list language-frequency) language-frequency)
-      )
-  )
-
-(defun swap-letters (ciphered)
+(defun swap-letters (swap-map)
   (cond
-   ((equal ciphered "") "")
-   ((null (gethash (intern (string (char ciphered 0))) swap-table)) 
-    (concatenate 'string (string (char ciphered 0)) (swap-letters (subseq ciphered 1))))
-   (t (concatenate 'string (string (gethash (intern (string (char ciphered 0))) swap-table)) (swap-letters (subseq ciphered 1))))
+   ((null swap-map) nil)
+   (t (substitute (symbol-to-char (first (first swap-map)) (second (first swap-map)) text)) (swap-letters (cdr swap-map)))
    )
   )
 
 (defun get-swap-map (ordered-text-frequency ordered-language-frequency)
   (cond 
    ((null ordered-language-frequency) nil)
-   (t (setf (gethash (get-letter (first ordered-text-frequency)) swap-table) (get-letter (first ordered-language-frequency)))
-            (get-swap-map (cdr ordered-text-frequency) (cdr ordered-language-frequency))
-            (print (get-letter (first ordered-text-frequency)) ) (print (get-letter (first ordered-language-frequency))))
+   (t (cons (cons (get-letter (first ordered-text-frequency)) (list (get-letter (first ordered-language-frequency)))) 
+            (get-swap-map (cdr ordered-text-frequency) (cdr ordered-language-frequency))))
    )
 )
 
