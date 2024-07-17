@@ -1,8 +1,8 @@
 
 ;; Globals
 
-(defparameter text "")
-(defparameter frequency-table (make-hash-table :test 'eql))
+(defparameter *text* "")
+(defparameter *frequency-table* (make-hash-table :test 'eql))
 
 ;; Main Function
 
