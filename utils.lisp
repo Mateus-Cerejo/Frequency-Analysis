@@ -13,8 +13,9 @@
 (defun round-to-decimal-places (number decimal-places)
   "Round number to decimal-places decimal places."
   (let ((factor (expt 10 decimal-places)))
-    (cond ((equal decimal-places 0) (/ (round (* number factor)) factor))
-	  (t (/ (float (round (* number factor))) factor)))))
+    (if (zerop decimal-places)
+	(/ (round (* number factor)) factor)
+	(/ (float (round (* number factor))) factor))))
 
 (defun get-percentage(total)
     "Modifies the frequency table so that the values are the percentage of each key.
