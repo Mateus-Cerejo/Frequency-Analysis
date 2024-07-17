@@ -1,3 +1,9 @@
+;; Path
+
+(defun get-path(file)
+  "Returns the path to the file"
+  (concatenate 'string "~/Projects/SI-Project/" file))
+
 ;; Hash Table
 
 (defun print-table(table)

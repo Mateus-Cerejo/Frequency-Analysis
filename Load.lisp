@@ -1,8 +1,6 @@
-(defun get-path(file)
-  "Returns the path to the file"
-  (concatenate 'string "~/Projects/SI-Project/" file))
+;; Load Functions
 
-(defun set-map()
+(defun load-map()
   "Loads the information needed to the map.
    The keys in the map will be the characters and the values will be the letter's frequency."
   (clrhash *frequency-table*)

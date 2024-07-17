@@ -1,4 +1,3 @@
-
 ;; Globals
 
 (defparameter *text* "")
@@ -8,5 +7,5 @@
 
 (defun main()
   "Deciphers the text in ciphertext.txt"
-  (load-data (get-path "ciphertext.txt"))
-  (set-map))
+  (load-data (get-path "Ciphertext.txt"))
+  (load-map))
