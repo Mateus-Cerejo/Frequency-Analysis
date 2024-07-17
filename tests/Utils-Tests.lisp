@@ -1,10 +1,22 @@
 (defun tests()
   "Run all tests"
+  (test-table-values)
   (test-get-percentage)
   (test-is-alphabet)
   (test-round-to-decimal-places))
 
 ;; Test Map functions
+
+(defun test-table-values()
+  "Checks if all the values in table are being returned correctly"
+  (let ((table (make-hash-table :test 'eql)))
+    (assert (equal (table-values table) '()) nil (format nil "Failed Test - Table Values~%Expected ()~%Got ~a~%" (table-values table)))
+
+    (setf (gethash 'a table) 1)
+    (setf (gethash 'b table) 2)
+    (setf (gethash 'c table) 3)
+    (assert (equal (table-values table) '(1 2 3)) nil (format nil "Failed Test - Table Values~%Expected (1, 2, 3)~%Got ~a~%" (table-values table))))
+  (format t "Passed Test - Table Values~%"))
 
 (defun test-get-percentage()
   "Checks if all the percentages are being correctly calculated"
