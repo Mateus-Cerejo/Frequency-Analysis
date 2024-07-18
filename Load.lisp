@@ -1,7 +1,7 @@
 ;; Load Functions
 
-(defun load-map()
-  "Loads the information needed to the map.
+(defun load-map(table)
+  "Loads the information needed to the map *frequency-table*.
    The keys in the map will be the characters and the values will be the letter's frequency."
   (clrhash *frequency-table*)
   (loop :for character across *text*
