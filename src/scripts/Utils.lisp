@@ -2,7 +2,7 @@
 
 (defun get-path(file)
   "Returns the path to the file"
-  (concatenate 'string "~/Projects/SI-Project/" file))
+  (concatenate 'string "~/Projects/SI-Project/data/" file))
 
 ;; Hash Table
 
@@ -15,7 +15,7 @@
 (defun table-values(table)
   "Returns a list with all the values of table"
   (let ((result '()))
-    (maphash (lambda (_ value) (push value result)) table)
+    (maphash (lambda (_ value) (declare (ignore _)) (push value result)) table)
     (nreverse result)))
 
 (defun get-percentage(table)

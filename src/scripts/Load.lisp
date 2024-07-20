@@ -1,4 +1,8 @@
-;; Load Functions
+;;; Imports
+
+(load "src/scripts/Utils.lisp")
+
+;;; Load Functions
 
 (defun load-map()
   "Loads the information needed to the map *frequency-table*.
