@@ -1,6 +1,6 @@
 ;;; Imports
 
-(load "src/scripts/utils/Number.lisp")
+(load "src/scripts/utils/number.lisp")
 
 ;;; Table functions
 

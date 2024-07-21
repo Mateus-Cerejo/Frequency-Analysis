@@ -1,6 +1,7 @@
 ;;; Imports
 
-(load "src/scripts/Utils.lisp")
+(load "src/scripts/utils/Character.lisp")
+(load "src/scripts/utils/Table.lisp")
 
 ;;; Load Functions
 
