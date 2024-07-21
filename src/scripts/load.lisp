@@ -1,8 +1,3 @@
-;;; Imports
-
-(load "src/scripts/utils/character.lisp")
-(load "src/scripts/utils/table.lisp")
-
 ;;; Load Functions
 
 (defun load-map(table text)

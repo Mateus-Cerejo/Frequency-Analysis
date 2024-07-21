@@ -1,7 +1,3 @@
-;;; Imports
-
-(load "src/scripts/utils/number.lisp")
-
 ;;; Table functions
 
 (defun print-table(table)

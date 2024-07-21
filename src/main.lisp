@@ -7,11 +7,6 @@
 
 (defconstant +ciphertext-file+ "Ciphertext.txt")
 
-;;; Imports
-
-(load "src/scripts/utils/path.lisp")
-(load "src/scripts/load.lisp")
-
 ;;; Main Function
 
 (defun main()

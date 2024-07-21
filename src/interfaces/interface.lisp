@@ -1,8 +1,5 @@
-;; Interface
+;;; Interfaces
 
-
-
-;;;;;;;; Example of use of an interface
-
-(defpackage :name-of-the-package
-  :use :cl)
+(defpackage :loader-project
+  (:use :cl)
+  (:export :load-all-files))
