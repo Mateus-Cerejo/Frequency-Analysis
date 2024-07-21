@@ -4,17 +4,18 @@
 
 ;;; Load Functions
 
-(defun load-map()
-  "Loads the information needed to the map *frequency-table*.
-   The keys in the map will be the characters and the values will be the letter's frequency."
-  (clrhash *frequency-table*)
-  (loop :for character across *text*
+(defun load-map(table text)
+  "Loads the information needed to the table.
+   The keys in table will be the characters and the values will be the letter's frequency."
+  (clrhash table)
+  (loop :for character across text
 	:when (is-alphabet character)
-	  :do (incf (gethash character *frequency-table* 0)))
-  (get-percentage *frequency-table*))
+	  :do (incf (gethash character table 0)))
+  (get-percentage table))
 
-(defun load-data(pathname)
-  "Gets ciphered text and stores the frequency of each letter in frequency table"
+(defun load-data(pathname str)
+  "Opens the file in pathname and store its content in str.
+   If file in pathname doens't exist, it prints an error message"
   (let ((out (make-string-output-stream)))
     (handler-case
 	(with-open-file (stream pathname :direction :input
@@ -24,4 +25,4 @@
 		:do (princ character out)))
       (file-error (e)
 	(format *error-output* "Error opening or reading file: ~a~%" e)))  
-      (setf *text* (get-output-stream-string out))))
+      (setf str (get-output-stream-string out))))
