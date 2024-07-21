@@ -1,4 +1,8 @@
-(load "src/scripts/utils/Numbers.lisp")
+;;; Imports
+
+(load "src/scripts/utils/Number.lisp")
+
+;;; Table functions
 
 (defun print-table(table)
   "Prints table in the format: 'key: value'"

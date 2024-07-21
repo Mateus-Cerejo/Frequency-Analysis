@@ -1,3 +1,5 @@
+;;; Number Functions
+
 (defun round-to-decimal-places (number decimal-places)
   "Round number to decimal-places decimal places."
   (let ((factor (expt 10 decimal-places)))
