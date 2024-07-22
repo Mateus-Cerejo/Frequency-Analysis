@@ -1,7 +1,3 @@
-;;; Package
-
-(in-package :loader-project)
-
 ;;; Constants
 
 (defconstant +compiled-dir+ (merge-pathnames "compiled/" (truename ".")))
@@ -21,6 +17,7 @@
 
 (defun load-all-files()
   "Loads all the necessary files in the project, in correct order"
+  (compile-and-load "src/interfaces/interfaces.lisp")
   (compile-and-load "src/scripts/utils/path.lisp")
   (compile-and-load "src/scripts/utils/character.lisp")
   (compile-and-load "src/scripts/utils/number.lisp")

@@ -1,15 +1,19 @@
+;;; Package
+
+(in-package :load)
+
 ;;; Load Functions
 
-(defun load-map(table text)
+(defun set-map(table text)
   "Loads the information needed to the table.
    The keys in table will be the characters and the values will be the letter's frequency."
   (clrhash table)
   (loop :for character across text
-	:when (is-alphabet character)
+	:when (utils:alphabetp character)
 	  :do (incf (gethash character table 0)))
-  (get-percentage table))
+  (utils:get-percentage table))
 
-(defun load-data(pathname str)
+(defun data(pathname str)
   "Opens the file in pathname and store its content in str.
    If file in pathname doens't exist, it prints an error message"
   (let ((out (make-string-output-stream)))

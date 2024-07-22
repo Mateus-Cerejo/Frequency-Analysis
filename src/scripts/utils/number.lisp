@@ -1,3 +1,7 @@
+;;; Package
+
+(in-package :utils)
+
 ;;; Number Functions
 
 (defun round-to-decimal-places (number decimal-places)

@@ -1,7 +1,6 @@
-;;; Globals
+;;; Package
 
-(defparameter *text* "")
-(defparameter *frequency-table* (make-hash-table :test 'eql))
+(in-package :run)
 
 ;;; Constants
 
@@ -11,5 +10,8 @@
 
 (defun main()
   "Deciphers the text in ciphertext.txt"
-  (load-data (get-path-to-files +ciphertext-file+ "/data/") *text*)
-  (load-map *frequency-table* *text*))
+  (let ((text "")
+	(frequency-table (make-hash-table :test 'eql)))
+    (load:data (utils:get-path-to-files +ciphertext-file+ "/data/") text)
+    (load:set-map frequency-table text)
+    frequency-table))

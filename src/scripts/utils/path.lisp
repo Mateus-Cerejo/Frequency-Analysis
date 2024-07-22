@@ -1,3 +1,7 @@
+;;; Package
+
+(in-package :utils)
+
 ;;; Path Functions
 
 (defun get-path-to-files(filename &optional folder)

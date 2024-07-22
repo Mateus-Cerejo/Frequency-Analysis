@@ -1,3 +1,7 @@
+;;; Package
+
+(in-package :utils)
+
 ;;; Table functions
 
 (defun print-table(table)
