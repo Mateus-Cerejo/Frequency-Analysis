@@ -1,3 +1,18 @@
+;;;; Number Utility Functions
+
+;;;; This file contains utility functions for number operations used throughout the project. It includes:
+;;;;
+;;;;     - Number Functions:
+;;;;         - `round-to-decimal-places`: Rounds a number to a specified number of decimal places.
+;;;;
+;;;; Usage:
+;;;;     The `round-to-decimal-places` function can be used to round numerical values 
+;;;;     to a desired precision, which is useful in various mathematical and formatting contexts.
+;;;;
+;;;; Note:
+;;;;     This file assumes the `utils` package is properly defined and used across 
+;;;;     the project.
+
 ;;; Package
 
 (in-package :utils)

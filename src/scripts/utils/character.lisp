@@ -1,6 +1,6 @@
-;;;; Utility Functions
+;;;; Character Utility Functions
 
-;;;; This file contains utility functions used throughout the project. It includes:
+;;;; This file contains utility functions for characters used throughout the project. It includes:
 ;;;;
 ;;;;     - Character Functions:
 ;;;;         - `alphabetp`: Checks if a character is a letter from the alphabet.

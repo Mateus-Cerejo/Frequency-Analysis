@@ -1,4 +1,4 @@
-;;;; Utility Functions
+;;;; Helpers Utility Functions
 
 ;;;; This file contains utility functions used throughout the project. It includes:
 ;;;;
