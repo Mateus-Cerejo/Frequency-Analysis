@@ -1,3 +1,20 @@
+;;;; Package Interfaces
+
+;;;; This file defines the package interfaces for the project. It specifies the 
+;;;; packages and the symbols they export. Each package corresponds to a module 
+;;;; in the project and exports functions and variables that are used by other 
+;;;; modules.
+;;;;
+;;;; Packages:
+;;;;     - `:run`: Main package responsible for running the program.
+;;;;     - `:load`: Package responsible for loading data and setting up the map.
+;;;;     - `:utils`: Utility package providing various helper functions.
+;;;;
+;;;; Usage:
+;;;;     These package definitions should be loaded before any source files that 
+;;;;     use or reference the exported symbols. This ensures that all dependencies 
+;;;;     are correctly resolved.
+
 ;;; Interfaces
 
 (defpackage :run
