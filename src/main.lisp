@@ -1,3 +1,19 @@
+;;;; Main Program File
+
+;;;; This file contains the main function for the program. It sets up the necessary
+;;;; constants and includes the primary function to decipher the text from a given file.
+;;;; The main steps include:
+;;;;
+;;;;     - Constants: Ensures that the constant +ciphertext+ is set up.
+;;;;     - Main Function: 
+;;;;         - `main`: Loads the data from the ciphertext file, processes it, and 
+;;;;           populates a frequency table with the results.
+;;;;
+;;;; Usage:
+;;;;     Call `main` to initialize and run the deciphering process. This function
+;;;;     reads the input file, processes the text, and returns the frequency table
+;;;;     of the deciphered text.
+
 ;;; Package
 
 (in-package :run)
