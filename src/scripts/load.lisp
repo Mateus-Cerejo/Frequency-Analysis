@@ -1,3 +1,19 @@
+;;;; Load Functions
+
+;;;; This file contains functions for loading data and populating a frequency 
+;;;; table from text. It includes:
+;;;;
+;;;;     - `set-map`: Populates a hash table with the frequency of each character 
+;;;;       in the provided text.
+;;;;     - `data`: Reads the content of a file specified by a pathname into a 
+;;;;       string, handling errors if the file does not exist or cannot be read.
+;;;;
+;;;; Usage:
+;;;;     These functions are used to load and process the text data necessary 
+;;;;     for the project's main functionality. Ensure that the `utils` package 
+;;;;     is loaded before using these functions, as they rely on utility functions 
+;;;;     from it.
+
 ;;; Package
 
 (in-package :load)
