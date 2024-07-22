@@ -1,3 +1,21 @@
+;;;; Compilation and Loading Utilities
+
+;;;; This file contains functions for managing the compilation and loading
+;;;; of Lisp source files within the project. It includes:
+;;;; 
+;;;;     - Constants: Definitions for the directory and file extension used
+;;;;       for storing compiled files.
+;;;;     - Functions:
+;;;;         - `compile-and-load`: Compiles a source file into a specified directory
+;;;;           and then loads the compiled file. Ensures that the target directory
+;;;;           exists before compiling.
+;;;;         - `load-all-files`: Compiles and loads a list of source files in a
+;;;;           specific order to ensure that dependencies are resolved correctly.
+;;;; 
+;;;; Usage:
+;;;;     Call `load-all-files` to compile and load all necessary files for the
+;;;;    project, ensuring that all dependencies are properly resolved.
+
 ;;; Constants
 
 (defconstant +compiled-dir+ (merge-pathnames "compiled/" (truename ".")))
