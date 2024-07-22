@@ -1,3 +1,19 @@
+;;;; Table Utility Functions
+
+;;;; This file contains utility functions for operations on hash tables used throughout the project. It includes:
+;;;;
+;;;;     - Table Functions:
+;;;;         - `print-table`: Prints the contents of a hash table in the format 'key: value'.
+;;;;         - `table-values`: Returns a list of all the values in a hash table.
+;;;;         - `get-percentage`: Modifies the values of a hash table to represent the percentage of each key's occurrence.
+;;;;
+;;;; Usage:
+;;;;     The table utility functions can be used to manage and manipulate hash tables,
+;;;;     especially for tasks that involve printing, aggregating values, and calculating percentages.
+;;;;
+;;;; Note:
+;;;;     This file assumes the `utils` package is properly defined and used across the project.
+
 ;;; Package
 
 (in-package :utils)
