@@ -14,6 +14,11 @@
 ;;;;     is loaded before using these functions, as they rely on utility functions 
 ;;;;     from it.
 
+;;;; This file is part of Frequency-Based Cipher Deciphering
+;;;;
+;;;; Copyright (c) 2024 ludef4r and Mateus-Cerejo
+;;;; Licensed under the MIT License. See LICENSE file for details.
+
 ;;; Package
 
 (in-package :load)

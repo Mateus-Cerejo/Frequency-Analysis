@@ -16,6 +16,12 @@
 ;;;;     Call `load-all-files` to compile and load all necessary files for the
 ;;;;    project, ensuring that all dependencies are properly resolved.
 
+
+;;;; This file is part of Frequency-Based Cipher Deciphering
+;;;;
+;;;; Copyright (c) 2024 ludef4r and Mateus-Cerejo
+;;;; Licensed under the MIT License. See LICENSE file for details.
+
 ;;; Constants
 
 (defconstant +compiled-dir+ (merge-pathnames "compiled/" (truename ".")))

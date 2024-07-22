@@ -11,6 +11,11 @@
 ;;;;     Call `run` to initialize and run the entire program. This function ensures
 ;;;;     that all dependencies are loaded and compiled before executing the main function.
 
+;;;; This file is part of Frequency-Based Cipher Deciphering
+;;;;
+;;;; Copyright (c) 2024 ludef4r and Mateus-Cerejo
+;;;; Licensed under the MIT License. See LICENSE file for details.
+
 ;;; Function
 
 (defun run()

@@ -17,6 +17,11 @@
 ;;;;     This file assumes the `utils` package is properly defined and used across 
 ;;;;     the project.
 
+;;;; This file is part of Frequency-Based Cipher Deciphering
+;;;;
+;;;; Copyright (c) 2024 ludef4r and Mateus-Cerejo
+;;;; Licensed under the MIT License. See LICENSE file for details.
+
 ;;; Package
 
 (in-package :utils)

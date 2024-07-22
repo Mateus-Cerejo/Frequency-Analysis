@@ -21,8 +21,8 @@ The primary objective is to decode ciphered messages by substituting letters bas
 
 **Usage:**
 
-1. **Load Ciphered Text:** Use the load-data function to read and process the ciphered text from a file.
-2. **Analyze Frequencies:** Run the load-map function to generate a frequency table of the letters in the ciphered text.
+1. **Load Ciphered Text:** Use the `load-data` function to read and process the ciphered text from a file.
+2. **Analyze Frequencies:** Run the `load-map` function to generate a frequency table of the letters in the ciphered text.
 3. **Apply Substitutions:** Use the deciphering logic to iteratively substitute letters based on their frequency, adjusting as needed to form valid phrases.
 4. **Evaluate Results:** Check the deciphered text for readability and accuracy by comparing against known words or phrases.
 
@@ -32,3 +32,10 @@ The motivation behind this project is twofold.
 Firstly, it provided valuable experience and learning opportunities in cryptography and computational linguistics. 
 Secondly, it aims to streamline the process of deciphering encoded messages by applying statistical analysis and linguistic patterns. 
 By automating the frequency analysis and substitution process, this project seeks to make cipher decryption more accessible and efficient.
+
+**License**
+
+This file is part of Frequency-Based Cipher Deciphering.
+
+Copyright (c) 2024 ludef4r and Mateus-Cerejo
+Licensed under the MIT License. See LICENSE file for details.
