@@ -33,7 +33,7 @@ Firstly, it provided valuable experience and learning opportunities in cryptogra
 Secondly, it aims to streamline the process of deciphering encoded messages by applying statistical analysis and linguistic patterns. 
 By automating the frequency analysis and substitution process, this project seeks to make cipher decryption more accessible and efficient.
 
-**License**
+**License:**
 
 This file is part of Frequency-Based Cipher Deciphering.
 
