@@ -18,7 +18,7 @@
 (defun load-all-files()
   "Loads all the necessary files in the project, in correct order"
   (compile-and-load "src/interfaces/interfaces.lisp")
-  (compile-and-load "src/scripts/utils/setup.lisp")
+  (compile-and-load "src/scripts/utils/helpers.lisp")
   (compile-and-load "src/scripts/utils/character.lisp")
   (compile-and-load "src/scripts/utils/number.lisp")
   (compile-and-load "src/scripts/utils/table.lisp")
