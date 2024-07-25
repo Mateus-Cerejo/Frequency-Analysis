@@ -23,5 +23,4 @@
    It first loads the loader script, then compiles and loads all necessary files,
    and finally runs the main function of the program."
   (load "loader.lisp")
-  (load-all-files)
-  (run:main))
+  (load-all-files))
