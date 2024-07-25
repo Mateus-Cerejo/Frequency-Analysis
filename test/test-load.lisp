@@ -25,7 +25,14 @@
       (error (e)
 	(pass)))))
 
-(def-test load-map-test
-  )
+(test load-map-test
+    (let ((table (make-hash-table))
+	  (text "abcdd"))
+      (set-map table text)
+      (is (equal 4 (hash-table-count table)) "Set Map Function: Expected size 4")
+      (is (and (equal (gethash #\a table) 20.0)
+	       (equal (gethash #\b table) 20.0)
+	       (equal (gethash #\c table) 20.0)
+	       (equal (gethash #\d table) 40.0)) "Set Map Function: Expected string 'abcdd' to have percentages 20, 20, 20, 40 respectively")))
 
 (run! 'load-tests)

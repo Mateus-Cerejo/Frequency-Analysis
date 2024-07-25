@@ -34,4 +34,4 @@
   (let ((text (load:data (utils:get-path-to-files +ciphertext+ "/data/")))
 	(frequency-table (make-hash-table :test 'eql)))
     (load:set-map frequency-table text)
-    frequency-table))
+    (utils:print-table frequency-table)))
